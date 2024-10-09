@@ -1,0 +1,182 @@
+/* Reseta margens e preenchimentos de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define margens e largura do elemento principal */
+main {
+    margin: auto;
+    width: 100%;
+}
+
+/* Estilos para o rodapé (footer) */
+footer {
+    display: flex; /* Utiliza flexbox para layout */
+    justify-content: space-around; /* Espaço igual entre itens */
+    align-items: center; /* Alinhamento central vertical */
+
+    background: #0854c7; /* Cor de fundo do footer */
+    padding: 20px 0; /* Preenchimento superior e inferior */
+
+    box-shadow: 1px 1px 20px #252525, -1px -1px 20px #ebebeb; /* Sombra */
+}
+
+/* Estilos para o logo.png e links dentro do footer */
+footer #logo.png,
+footer #links {
+    width: 25%; /* Largura de 25% para logo.png e links */
+}
+
+/* Estilos para a imagem do logo.png */
+footer #logo.png img {
+    width: 230px; /* Largura da imagem do logo.png */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+/* Estilos para a seção de links no footer */
+footer #links {
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Direção em coluna */
+    justify-content: center; /* Alinhamento central vertical */
+    align-items: center; /* Alinhamento central horizontal */
+}
+
+/* Estilos para as imagens dos links */
+footer #links img {
+    width: 35px; /* Largura das imagens de links */
+    margin-top: 5px; /* Margem superior */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Margem esquerda para conteúdo do navbar */
+#navbarSupportedContent {
+    margin-left: 50px; /* Margem esquerda de 50px */
+}
+
+/* Estilos para o título do card */
+.card-title {
+    text-align: center; /* Alinhamento central do texto */
+}
+
+/* Estilos para o texto do card */
+.card-text {
+    color: rgb(0, 17, 255); /* Cor do texto */
+    font-weight: 700; /* Peso da fonte */
+    margin-top: 30px; /* Margem superior */
+    text-align: center; /* Alinhamento central */
+}
+
+/* Margem superior para a seção de compra */
+#compra {
+    margin-top: 30px; /* Margem superior */
+}
+
+/* Estilos para imagens dentro de containers fluidos */
+.container-fluid img {
+    width: 200px; /* Largura das imagens */
+    margin-left: 20px; /* Margem esquerda */
+}
+
+/* Remove preenchimentos laterais em containers fluidos */
+.container-fluid, .px-0 {
+    padding-left: 0 !important; /* Remove preenchimento esquerdo */
+    padding-right: 0 !important; /* Remove preenchimento direito */
+}
+
+/* Estilo para o link "home" */
+#home {
+    font-weight: 700; /* Peso da fonte */
+}
+
+/* Estilos para links de navegação */
+.nav-link {
+    font-weight: 500; /* Peso da fonte */
+}
+
+/* Margem direita para o campo de pesquisa */
+#pesquisa {
+    margin-right: 20px; /* Margem direita */
+}
+
+/* Estilos para o ícone de pesquisa */
+#pesquisaIcone {
+    background-image: url(./assets/search.svg); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-position-x: 98%; /* Posição horizontal */
+    background-position-y: center; /* Posição vertical */
+}
+
+/* Estilos para cards */
+#cards, #cards2 {
+    margin-top: 20px; /* Margem superior */
+    margin-bottom: 20px; /* Margem inferior */
+    justify-content: space-around; /* Espaçamento igual entre itens */
+    flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+/* Estilos para o corpo do offcanvas */
+.offcanvas-body {
+    font-weight: 500; /* Peso da fonte */
+}
+
+/* Estilos para imagens dentro do offcanvas */
+.offcanva-img img {
+    width: 300px; /* Largura das imagens */
+    margin-top: 20px; /* Margem superior */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilos para o contêiner de imagens no offcanvas */
+.offcanva-img {
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Alinhamento central horizontal */
+}
+
+/* Estilos para os títulos h6 */
+h6 {
+    color: rgb(0, 146, 204); /* Cor do texto */
+    margin-top: 30px; /* Margem superior */
+    text-align: center; /* Alinhamento central */
+}
+
+/* Estilos para o cabeçalho do offcanvas */
+.offcanvas-header {
+    font-weight: 700; /* Peso da fonte */
+}
+
+/* Margem superior para a seção "continua" */
+#continua {
+    margin-top: 10px; /* Margem superior */
+}
+
+/* Margem superior para a seção de botões */
+#botoes {
+    margin-top: 135px; /* Margem superior */
+}
+
+/* Margem superior para botões em cards */
+#botao-card {
+    margin-top: 8px; /* Margem superior */
+}
+
+/* Estilos responsivos: oculta o footer em telas pequenas */
+@media screen and (max-width: 420px) {
+    footer {
+        display: none; /* Oculta o footer */
+    }
+}
+
+/* Estilos responsivos: ajusta cards em telas médias */
+@media screen and (max-width: 1024px) and (min-width: 770px) {
+    #cards, #cards1 {
+        flex-wrap: nowrap; /* Mantém os cards em uma linha */
+    }
+}
+
+/* Estilos responsivos: ajusta layout de cards em telas pequenas */
+@media screen and (max-width: 425px) {
+    #cards, #cards2 {
+        flex-wrap: wrap; /* Permite quebra de linha nos cards */
+    }
+}
